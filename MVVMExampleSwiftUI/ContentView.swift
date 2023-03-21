@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+  
+  @StateObject private var vm = ProductListViewModel(webservice: Webservice())
+  
+  var body: some View {
+    
+    List(vm.products) { product in
+      Text(product.title)
+    }.task {
+      await vm.populateProducts()
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
