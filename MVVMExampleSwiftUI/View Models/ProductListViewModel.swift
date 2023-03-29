@@ -1,6 +1,6 @@
 //
 //  ProductListViewModel.swift
-//  MVVMExampleSwiftUI
+//  MVVMExampleSwiftUIp
 //
 //  Created by Cliff Sharp on 3/21/23.
 //
@@ -46,6 +46,10 @@ struct ProductViewModel: Identifiable {
   
   var price: Double {
     product.price
+  }
+  
+  var images: [String] {
+    product.images
   }
   
 }

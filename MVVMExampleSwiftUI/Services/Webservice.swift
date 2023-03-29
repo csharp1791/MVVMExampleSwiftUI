@@ -31,6 +31,7 @@ class Webservice {
       throw NetworkError.decodingError
     }
     
+    print (products)
     return products
   }
   

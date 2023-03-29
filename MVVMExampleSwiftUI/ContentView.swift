@@ -15,6 +15,9 @@ struct ContentView: View {
     
     List(vm.products) { product in
       Text(product.title)
+      Text(product.price.toCurrency())
+      AsyncImage(url: URL(string: product.images[0]), scale: 3)
+
     }.task {
       await vm.populateProducts()
     }

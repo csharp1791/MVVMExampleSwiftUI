@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53AC877329D4B3FE006DCD69 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC877229D4B3FE006DCD69 /* Double.swift */; };
 		53C14E0229CA24C800B752C1 /* MVVMExampleSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C14E0129CA24C800B752C1 /* MVVMExampleSwiftUIApp.swift */; };
 		53C14E0429CA24C800B752C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C14E0329CA24C800B752C1 /* ContentView.swift */; };
 		53C14E0629CA24C900B752C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C14E0529CA24C900B752C1 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53AC877229D4B3FE006DCD69 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		53C14DFE29CA24C800B752C1 /* MVVMExampleSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMExampleSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C14E0129CA24C800B752C1 /* MVVMExampleSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMExampleSwiftUIApp.swift; sourceTree = "<group>"; };
 		53C14E0329CA24C800B752C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53AC877129D4B3A2006DCD69 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				53AC877229D4B3FE006DCD69 /* Double.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		53C14DF529CA24C800B752C1 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 		53C14E0029CA24C800B752C1 /* MVVMExampleSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				53AC877129D4B3A2006DCD69 /* Extension */,
 				53C14E1529CA2D4500B752C1 /* View Models */,
 				53C14E1229CA277700B752C1 /* Models */,
 				53C14E0F29CA26FF00B752C1 /* Services */,
@@ -170,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AC877329D4B3FE006DCD69 /* Double.swift in Sources */,
 				53C14E0429CA24C800B752C1 /* ContentView.swift in Sources */,
 				53C14E1729CA2D6700B752C1 /* ProductListViewModel.swift in Sources */,
 				53C14E0229CA24C800B752C1 /* MVVMExampleSwiftUIApp.swift in Sources */,
